@@ -1,0 +1,17 @@
+# Filename: gitignore
+# Note:     A gitignore for this repository (duh).
+
+# Ignore everything!
+*
+
+# But descend into directories.
+!*/
+
+# And mind the whitelist!
+!.gitignore
+!kuronami-theme.el
+!license.txt
+!readme.md
+
+!/asset/*.jpeg
+!/asset/*.png

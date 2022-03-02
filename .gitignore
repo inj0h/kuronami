@@ -12,6 +12,4 @@
 !kuronami-theme.el
 !license.txt
 !readme.md
-
-!/asset/*.jpeg
-!/asset/*.png
+!screencap.png

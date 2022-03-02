@@ -4,7 +4,7 @@ An Emacs theme with cool autumnal colors against a deep blue background. &#12780
 Inspired by Deeper Blue (GNU Emacs default), [Gruber Darker,](https://github.com/rexim/gruber-darker-theme) and [Naysayer.](https://github.com/nickav/naysayer-theme.el)
 
 # Preview
-TBD.
+![screencap](screencap.png)
 
 # Installation
 ## Requirements

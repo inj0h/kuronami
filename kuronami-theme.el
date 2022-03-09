@@ -1,11 +1,12 @@
 ;;; kuronami-theme.el --- A deep blue theme with cool autumnal colors -*- lexical-binding: t; -*-
 
 ;; Author: Eric Chung <>
-;; Version: 1.0
+;; Version: 1.0.0
 ;; Filename: kuronami-theme.el
 ;; Package-Requires: ((emacs "24.1"))
 ;; URL: https://github.com/super3ggo/kuronami
 ;; License: GPL-3+
+;; SPDX-License-Identifier: GPL-3.0-or-later
 
 ;;; Commentary:
 
@@ -158,14 +159,6 @@
 
    ;;; Third Party Faces:
 
-   ;; Company:
-   `(company-tooltip                 ((t (:background ,kuronami-black-01))))
-   `(company-tooltip-annotation      ((t (:foreground ,kuronami-blue-02))))
-   `(company-tooltip-common          ((t (:foreground ,kuronami-green-03))))
-   `(company-tooltip-scrollbar-thumb ((t (:inherit company-tooltip))))
-   `(company-tooltip-scrollbar-track ((t (:inherit company-tooltip))))
-   `(company-tooltip-selection       ((t (:background ,kuronami-green-01))))
-
    ;;; Programming Language Faces:
 
    ;; Markdown:
@@ -181,4 +174,5 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'kuronami)
+(provide 'kuronami-theme)
 ;;; kuronami-theme.el ends here.

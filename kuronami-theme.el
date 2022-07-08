@@ -51,21 +51,21 @@
 ;;       As mentioned earlier, each color declaration has an in-line comment
 ;;       describing its origin or derivation.
 ;;
-(let ((kuronami-black-00  "#181a26")  ; Stolen from the Deeper Blue Emacs theme.
-      (kuronami-black-01  "#202129")  ; black-02 -> 3 Shades darker.
-      (kuronami-black-02  "#2f303b")  ; black-00 -> 1 Tint lighter.
-      (kuronami-blue-00   "#2e41ac")  ; Sampled from an image of NGE Unit-00 (blue).
-      (kuronami-blue-01   "#7fbbe9")  ; Sampled from official Ayanami Blue!
-      (kuronami-blue-02   "#abbfda")  ; yellow-00 -> Complementary #97b0d1 -> 2 Tints lighter.
-      (kuronami-gray-00   "#595959")  ; Stolen from Emacs default "gray/grey 35."
-      (kuronami-gray-01   "#b3b3b3")  ; Stolen from Emacs default "gray/grey 70."
-      (kuronami-green-00  "#708b4c")  ; green-03 -> 4 Shades darker.
-      (kuronami-green-01  "#668b8b")  ; Stolen from Emacs default "pale turquoise 4."
-      (kuronami-green-02  "#65bab4")  ; blue-01 -> Analogous #7fe9e2 -> 2 Shades darker.
-      (kuronami-green-03  "#bbe97f")  ; blue-01 -> Triadic.
+(let ((kuronami-black-00 "#181a26")   ; Stolen from the Deeper Blue Emacs theme.
+      (kuronami-black-01 "#202129")   ; black-02 -> 3 Shades darker.
+      (kuronami-black-02 "#2f303b")   ; black-00 -> 1 Tint lighter.
+      (kuronami-blue-00 "#2e41ac")    ; Sampled from an image of NGE Unit-00 (blue).
+      (kuronami-blue-01 "#7fbbe9")    ; Sampled from official Ayanami Blue!
+      (kuronami-blue-02 "#abbfda")    ; yellow-00 -> Complementary #97b0d1 -> 2 Tints lighter.
+      (kuronami-gray-00 "#595959")    ; Stolen from Emacs default "gray/grey 35."
+      (kuronami-gray-01 "#b3b3b3")    ; Stolen from Emacs default "gray/grey 70."
+      (kuronami-green-00 "#708b4c")   ; green-03 -> 4 Shades darker.
+      (kuronami-green-01 "#668b8b")   ; Stolen from Emacs default "pale turquoise 4."
+      (kuronami-green-02 "#65bab4")   ; blue-01 -> Analogous #7fe9e2 -> 2 Shades darker.
+      (kuronami-green-03 "#bbe97f")   ; blue-01 -> Triadic.
       (kuronami-orange-00 "#e9ad7f")  ; blue-01 -> Complementary.
-      (kuronami-red-00    "#e97f86")  ; blue-01 -> Triadic #e97fbb -> Analogous.
-      (kuronami-white-00  "#fffafa")  ; Stolen from Emacs default "snow."
+      (kuronami-red-00 "#e97f86")     ; blue-01 -> Triadic #e97fbb -> Analogous.
+      (kuronami-white-00 "#fffafa")   ; Stolen from Emacs default "snow."
       (kuronami-yellow-00 "#d1b897")) ; Stolen from the Naysayer Emacs theme.
   (custom-theme-set-faces
    `kuronami
@@ -73,49 +73,49 @@
    ;;; Vanilla Faces:
 
    ;; UI Elements:
-   `(cursor              ((t (:background ,kuronami-red-00))))
-   `(default             ((t (:background ,kuronami-black-00 :foreground ,kuronami-yellow-00))))
-   `(error               ((t (:foreground ,kuronami-red-00 :weight bold))))
-   `(fringe              ((t (:background ,kuronami-black-00))))
-   `(highlight           ((t (:background ,kuronami-green-00))))
-   `(isearch             ((t (:background ,kuronami-red-00 :foreground ,kuronami-black-00))))
-   `(lazy-highlight      ((t (:background ,kuronami-green-01))))
-   `(line-number         ((t (:foreground ,kuronami-blue-02))))
-   `(link                ((t (:foreground ,kuronami-green-02 :bold t :underline t))))
-   `(link-visited        ((t (:foreground ,kuronami-yellow-00 :bold t :underline t))))
-   `(match               ((t (:inherit lazy-highlight))))
-   `(minibuffer-prompt   ((t (:foreground ,kuronami-white-00))))
-   `(region              ((t (:extend nil :background ,kuronami-blue-00)))) ; Mark to one past the final non-whitespace character kinda like Vi!
-   `(show-paren-match    ((t (:background ,kuronami-blue-02))))
+   `(cursor ((t (:background ,kuronami-red-00))))
+   `(default ((t (:background ,kuronami-black-00 :foreground ,kuronami-yellow-00))))
+   `(error ((t (:foreground ,kuronami-red-00 :weight bold))))
+   `(fringe ((t (:background ,kuronami-black-00))))
+   `(highlight ((t (:background ,kuronami-green-00))))
+   `(isearch ((t (:background ,kuronami-red-00 :foreground ,kuronami-black-00))))
+   `(lazy-highlight ((t (:background ,kuronami-green-01))))
+   `(line-number ((t (:foreground ,kuronami-blue-02))))
+   `(link ((t (:foreground ,kuronami-green-02 :bold t :underline t))))
+   `(link-visited ((t (:foreground ,kuronami-yellow-00 :bold t :underline t))))
+   `(match ((t (:inherit lazy-highlight))))
+   `(minibuffer-prompt ((t (:foreground ,kuronami-white-00))))
+   `(region ((t (:extend nil :background ,kuronami-blue-00)))) ; Mark to one past the final non-whitespace character kinda like Vi!
+   `(show-paren-match ((t (:background ,kuronami-blue-02))))
    `(show-paren-mismatch ((t (:background ,kuronami-red-00))))
-   `(success             ((t (:foreground ,kuronami-green-03 :weight bold))))
-   `(warning             ((t (:foreground ,kuronami-orange-00 :weight bold))))
+   `(success ((t (:foreground ,kuronami-green-03 :weight bold))))
+   `(warning ((t (:foreground ,kuronami-orange-00 :weight bold))))
 
    ;; Font Lock:
-   `(font-lock-builtin-face           ((t (:foreground ,kuronami-white-00))))
-   `(font-lock-comment-face           ((t (:foreground ,kuronami-blue-01 :italic t))))
+   `(font-lock-builtin-face ((t (:foreground ,kuronami-white-00))))
+   `(font-lock-comment-face ((t (:foreground ,kuronami-blue-01 :italic t))))
    `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
-   `(font-lock-constant-face          ((t (:foreground ,kuronami-orange-00))))
-   `(font-lock-doc-face               ((t (:foreground ,kuronami-green-00))))
-   `(font-lock-function-name-face     ((t (:foreground ,kuronami-blue-02))))
-   `(font-lock-keyword-face           ((t (:inherit font-lock-builtin-face))))
-   `(font-lock-negation-char-face     ((t (:foreground ,kuronami-red-00))))
-   `(font-lock-preprocessor-face      ((t (:foreground ,kuronami-green-03))))
-   `(font-lock-string-face            ((t (:foreground ,kuronami-green-02))))
-   `(font-lock-type-face              ((t (:inherit font-lock-constant-face))))
-   `(font-lock-variable-name-face     ((t (:inherit font-lock-function-name-face))))
-   `(font-lock-warning-face           ((t (:foreground ,kuronami-red-00 :bold t :italic t))))
+   `(font-lock-constant-face ((t (:foreground ,kuronami-orange-00))))
+   `(font-lock-doc-face ((t (:foreground ,kuronami-green-00))))
+   `(font-lock-function-name-face ((t (:foreground ,kuronami-blue-02))))
+   `(font-lock-keyword-face ((t (:inherit font-lock-builtin-face))))
+   `(font-lock-negation-char-face ((t (:foreground ,kuronami-red-00))))
+   `(font-lock-preprocessor-face ((t (:foreground ,kuronami-green-03))))
+   `(font-lock-string-face ((t (:foreground ,kuronami-green-02))))
+   `(font-lock-type-face ((t (:inherit font-lock-constant-face))))
+   `(font-lock-variable-name-face ((t (:inherit font-lock-function-name-face))))
+   `(font-lock-warning-face ((t (:foreground ,kuronami-red-00 :bold t :italic t))))
 
    ;;; From this point, the Faces get organized alphabetically.
 
    ;; Compilation:
-   `(compilation-column-number  ((t (:foreground ,kuronami-white-00))))
-   `(compilation-line-number    ((t (:foreground ,kuronami-blue-02))))
+   `(compilation-column-number ((t (:foreground ,kuronami-white-00))))
+   `(compilation-line-number ((t (:foreground ,kuronami-blue-02))))
    `(compilation-mode-line-exit ((t (:inherit compilation-info))))
    `(compilation-mode-line-fail ((t (:inherit compilation-error))))
 
    ;; Completions:
-   `(completions-common-part      ((t (:foreground ,kuronami-white-00))))
+   `(completions-common-part ((t (:foreground ,kuronami-white-00))))
    `(completions-first-difference ((t (:foreground ,kuronami-orange-00 :bold t))))
 
    ;; Flyspell:
@@ -126,33 +126,33 @@
 
    ;; Ido:
    `(ido-first-match ((t (:foreground ,kuronami-orange-00 :italic t))))
-   `(ido-only-match  ((t (:foreground ,kuronami-green-03 :bold t :italic t))))
-   `(ido-subdir      ((t (:foreground ,kuronami-blue-02))))
+   `(ido-only-match ((t (:foreground ,kuronami-green-03 :bold t :italic t))))
+   `(ido-subdir ((t (:foreground ,kuronami-blue-02))))
 
    ;; Mode Line:
-   `(mode-line           ((t (:background ,kuronami-gray-01 :foreground ,kuronami-black-00)))) ; Just colors. No "boxing" effect.
+   `(mode-line ((t (:background ,kuronami-gray-01 :foreground ,kuronami-black-00)))) ; Just colors. No "boxing" effect.
    `(mode-line-buffer-id ((t nil)))
-   `(mode-line-emphasis  ((t nil)))
-   `(mode-line-inactive  ((t (:background ,kuronami-gray-00 :foreground ,kuronami-gray-01))))
+   `(mode-line-emphasis ((t nil)))
+   `(mode-line-inactive ((t (:background ,kuronami-gray-00 :foreground ,kuronami-gray-01))))
 
    ;; Org:
    `(org-block ((t (:extend t :background ,kuronami-black-01 :foreground ,kuronami-gray-01))))
-   `(org-done  ((t (:foreground ,kuronami-green-03 :weight bold))))
+   `(org-done ((t (:foreground ,kuronami-green-03 :weight bold))))
    `(org-table ((t (:foreground ,kuronami-blue-01))))
-   `(org-todo  ((t (:foreground ,kuronami-orange-00 :weight bold))))
+   `(org-todo ((t (:foreground ,kuronami-orange-00 :weight bold))))
 
    ;; Whitespace:
-   `(trailing-whitespace         ((t (:inherit whitespace-trailing)))) ; Different from whitespace-trailing? Shrug.
-   `(whitespace-empty            ((t (:background ,kuronami-red-00 :foreground ,kuronami-black-02))))
-   `(whitespace-hspace           ((t (:background ,kuronami-black-00 :foreground ,kuronami-black-02))))
-   `(whitespace-indentation      ((t (:inherit whitespace-empty))))
-   `(whitespace-line             ((t (:background ,kuronami-black-00 :foreground ,kuronami-red-00))))
-   `(whitespace-newline          ((t (:background ,kuronami-black-00 :foreground ,kuronami-black-02))))
-   `(whitespace-space            ((t (:background ,kuronami-black-00 :foreground ,kuronami-black-02))))
-   `(whitespace-space-after-tab  ((t (:inherit whitespace-empty))))
+   `(trailing-whitespace ((t (:inherit whitespace-trailing)))) ; Different from whitespace-trailing? Shrug.
+   `(whitespace-empty ((t (:background ,kuronami-red-00 :foreground ,kuronami-black-02))))
+   `(whitespace-hspace ((t (:background ,kuronami-black-00 :foreground ,kuronami-black-02))))
+   `(whitespace-indentation ((t (:inherit whitespace-empty))))
+   `(whitespace-line ((t (:background ,kuronami-black-00 :foreground ,kuronami-red-00))))
+   `(whitespace-newline ((t (:background ,kuronami-black-00 :foreground ,kuronami-black-02))))
+   `(whitespace-space ((t (:background ,kuronami-black-00 :foreground ,kuronami-black-02))))
+   `(whitespace-space-after-tab ((t (:inherit whitespace-empty))))
    `(whitespace-space-before-tab ((t (:inherit whitespace-empty))))
-   `(whitespace-tab              ((t (:background ,kuronami-black-00 :foreground ,kuronami-black-02))))
-   `(whitespace-trailing         ((t (:inherit whitespace-empty))))
+   `(whitespace-tab ((t (:background ,kuronami-black-00 :foreground ,kuronami-black-02))))
+   `(whitespace-trailing ((t (:inherit whitespace-empty))))
 
    ;;; Programming Language Faces:
    ;; Nothing here yet.
@@ -162,7 +162,7 @@
    ;;; Programming Language Faces:
 
    ;; Markdown:
-   `(markdown-code-face             ((t (:extend t :background ,kuronami-black-01 :foreground ,kuronami-gray-01))))
+   `(markdown-code-face ((t (:extend t :background ,kuronami-black-01 :foreground ,kuronami-gray-01))))
    `(markdown-language-keyword-face ((t (:foreground ,kuronami-blue-01))))
 
 ;;;###autoload

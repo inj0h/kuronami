@@ -165,9 +165,6 @@
    `(markdown-code-face             ((t (:extend t :background ,kuronami-black-01 :foreground ,kuronami-gray-01))))
    `(markdown-language-keyword-face ((t (:foreground ,kuronami-blue-01))))
 
-   ;; Rust:
-   `(rust-builtin-formatting-macro ((t (:inherit font-lock-preprocessor-face)))))) ; Macros get one color.
-
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
   (add-to-list 'custom-theme-load-path

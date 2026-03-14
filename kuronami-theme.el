@@ -54,7 +54,7 @@
       (kuronami-blue2   "#a5bad7")  ; yellow0 -> complementary (#8fa9cd) -> 2 tints lighter
       (kuronami-gray0   "#b3b3b3")  ; Emacs default "gray/grey 70"
       (kuronami-gray1   "#c9c9c9")  ; gray0 -> 3 tints lighter
-      (kuronami-green0  "#708b4c")  ; green3 -> 4 shades darker
+      (kuronami-green0  "#6d8854")  ; green3 -> 4 shades darker
       (kuronami-green1  "#668b8b")  ; Emacs default "pale turquoise 4"
       (kuronami-green2  "#70b5b6")  ; blue1 -> analogous (#8ce3e4) -> 2 shades darker
       (kuronami-green3  "#b7e48c")  ; blue1 -> triadic

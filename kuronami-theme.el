@@ -58,8 +58,8 @@
       (kuronami-green1  "#668b8b")  ; Emacs default "pale turquoise 4"
       (kuronami-green2  "#70b5b6")  ; blue1 -> analogous (#8ce3e4) -> 2 shades darker
       (kuronami-green3  "#b7e48c")  ; blue1 -> triadic
-      (kuronami-red0    "#e48d8c")  ; blue1 -> triadic (#e48cb7) -> analogous
-      (kuronami-white0  "#ffeeee")  ; A warmer version of the Emacs default "snow" (#ffeeee)
+      (kuronami-red0    "#df7977")  ; blue1 -> triadic (#e48cb7) -> analogous (#e48d8c) -> 1 mono darker
+      (kuronami-white0  "#fff6f6")  ; A warmer version of the Emacs default "snow" (#fffafa)
       (kuronami-yellow0 "#cdb38f")) ; Naysayer (#d1b897) -> 1 tint lighter (#d5bfa1) -> 1 mono darker
   (custom-theme-set-faces
    `kuronami
@@ -89,14 +89,14 @@
    `(font-lock-builtin-face           ((t (:foreground ,kuronami-blue2))))
    `(font-lock-comment-face           ((t (:foreground ,kuronami-blue1 :italic t))))
    `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
-   `(font-lock-constant-face          ((t (:foreground ,kuronami-white0))))
+   `(font-lock-constant-face          ((t (:inherit font-lock-builtin-face))))
    `(font-lock-doc-face               ((t (:foreground ,kuronami-green0))))
-   `(font-lock-function-name-face     ((t (:foreground ,kuronami-gray1))))
+   `(font-lock-function-name-face     ((t (:foreground ,kuronami-white0))))
    `(font-lock-keyword-face           ((t (:inherit font-lock-builtin-face))))
    `(font-lock-negation-char-face     ((t (:foreground ,kuronami-red0))))
-   `(font-lock-preprocessor-face      ((t (:foreground ,kuronami-green3))))
+   `(font-lock-preprocessor-face      ((t (:inherit font-lock-builtin-face))))
    `(font-lock-string-face            ((t (:foreground ,kuronami-green2))))
-   `(font-lock-type-face              ((t (:inherit font-lock-constant-face))))
+   `(font-lock-type-face              ((t (:foreground ,kuronami-yellow0))))
    `(font-lock-variable-name-face     ((t (:inherit font-lock-function-name-face))))
    `(font-lock-warning-face           ((t (:foreground ,kuronami-red0 :bold t :italic t))))
 

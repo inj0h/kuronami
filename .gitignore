@@ -1,8 +1,8 @@
 *
 !*/
 
-!.gitignore
-!kuronami-theme.el
-!license.txt
-!readme.md
-!screencap.png
+!/.gitignore
+!/kuronami-theme.el
+!/license.txt
+!/readme.md
+!/screencap.png
